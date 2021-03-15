@@ -37,7 +37,8 @@ class Falcon_Reply {
 					$subparts[] = $subfrag->getContent();
 				}
 
-				$parts[] = '<blockquote>' . implode("\n", $subparts) . '</blockquote>';
+				// $parts[] = '<blockquote>' . implode("\n", $subparts) . '</blockquote>';
+				error_log( print_r( $parts, 1 ) );
 			}
 			else {
 				$parts[] = $fragment->getContent();
